@@ -18,6 +18,27 @@
                     <div>
                         <img src="assets/images/logo.png" class="logo-img">
                         <img src="assets/images/mb-logo.svg" class="mb-logo">
+                        <a href="#" class="icon-menu mb-show" id="mb-search-show">
+                            <svg width="30" height="30" id="panel-search-icon" class="s-icon" viewBox="0 0 100 100">
+                                <path d="M 20 80 l 25 -25"></path>
+                                <circle r="20" cx="59" cy="41"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <form action="#" method="post" class="mb-search-top">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search" required>
+                                <button type="submit" class="btn icon-menu">
+                                    <svg width="30" height="30" id="panel-search-icon" class="s-icon" viewBox="0 0 100 100">
+                                        <path d="M 20 80 l 25 -25"></path>
+                                        <circle r="20" cx="59" cy="41"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
                         <div class="dropdown">
                             <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Create
@@ -75,25 +96,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="icon-menu">
-                            <svg width="40" height="20" class="rand-arrows" viewBox="0 0 144 60">
-                                <path class="line" d="M 25 15 l 27 0 l 10 10 m 10 10 l 10 10 l 17 0"></path>
-                                <path class="arrow" d="M 99 45 l 0 -10 l 20 10 l -20 10 l 0 -10"></path>
-                                <path class="line" d="M 25 45 l 27 0 l 30 -30 l 17 0"></path>
-                                <path class="arrow" d="M 99 15 l 0 -10 l 20 10 l -20 10 l 0 -10"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="icon-menu">
-                            <svg width="30" height="30" id="panel-search-icon" class="s-icon" viewBox="0 0 100 100">
-                                <path d="M 20 80 l 25 -25"></path>
-                                <circle r="20" cx="59" cy="41"></circle>
-                            </svg>
-                        </a>
-                    </div>
-                    <div>
                         <div class="dropdown login-dropdown">
                             <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="mb-none">Login</span>
+                                <span class="">Login</span>
                             </button>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Login</a></li>
@@ -107,514 +112,537 @@
         </div>
         <div class="main-content">
             <div class="page-content">
-                <div class="heading">Meme Templates</div>
-                <div class="text">Blank customizable templates of the most popular trending and latest memes. Over 1 million templates, updated continously. <br> To upload your own template, visit the <a href="#">Meme Generator</a> and click "upload your own image". To create an animated GIF template, choose a video in the <a href="#">GIF Maker</a> and click "Save as Template". User-uploaded templates that become popular may display on this page.</div>
-                <div class="search-template">
-                    <form action="#" method="post">
-                        <input type="text" name="q" placeholder="Search all templates...">
-                        <button type="submit"  class="btn btn-search">Search</button>
-                    </form>
+                <div class="container">
+                    <div class="heading fadeIn">Meme Templates</div>
+                    <div class="text fadeIn">Blank customizable templates of the most popular trending and latest memes. Over 1 million templates, updated continously. <br> To upload your own template, visit the <a href="#">Meme Generator</a> and click "upload your own image". To create an animated GIF template, choose a video in the <a href="#">GIF Maker</a> and click "Save as Template". User-uploaded templates that become popular may display on this page.</div>
+                    <div class="search-template fadeIn">
+                        <form action="#" method="post">
+                            <input type="text" name="q" placeholder="Search all templates...">
+                            <button type="submit"  class="btn btn-search">Search</button>
+                        </form>
+                    </div>
                 </div>
             </div>
 
             <div class="templates-section">
-                <div class="filters-flex">
-                    <div class="tab-anchers">
-                        <a href="#" class="btn btn-tab active">Meme Templates</a>
-                        <a href="#" class="btn btn-tab">GIF Templates</a>
-                    </div>
-                    <div class="filter-right">
-                        <div class="sort-div">
-                            <button type="button" class="btn-sort">Top <small>30 days</small></button>
-                            <div class="sort-dropdown d-none" id="sort-dropdown">
-                                <div class="sort-dropdown-label">Sort By:</div>
-                                <a class="sort-dropdown-link active" href="#">Top <small>30 days</small></a>
-                                <a class="sort-dropdown-link" href="">Top <small>All Time</small></a>
-                                <a class="sort-dropdown-link" href="">Top New</a>
+                <div class="container">
+                    <div class="filters-flex fadeIn">
+                        <div class="tab-anchers">
+                            <a href="#" class="btn btn-tab active">Meme Templates</a>
+                            <a href="#" class="btn btn-tab">GIF Templates</a>
+                        </div>
+                        <div class="filter-right">
+                            <div class="sort-div">
+                                <button type="button" class="btn-sort">Top <small>30 days</small></button>
+                                <div class="sort-dropdown d-none" id="sort-dropdown">
+                                    <div class="sort-dropdown-label">Sort By:</div>
+                                    <a class="sort-dropdown-link active" href="#">Top <small>30 days</small></a>
+                                    <a class="sort-dropdown-link" href="">Top <small>All Time</small></a>
+                                    <a class="sort-dropdown-link" href="">Top New</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="templates-items">
-                    <div class="templates-div">
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Drake Hotline Bling</a>
+                    <div class="templates-items">
+                        <div class="templates-div">
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Drake Hotline Bling</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/1.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
                             </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/1.jpg" class="template-img"></a>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Two Buttons</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/2.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
                             </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Distracted Boyfriend</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/3.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">UNO Draw 25 Cards</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/4.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Running Away Balloon</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/5.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Left Exit 12 Off Ramp</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/6.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Bernie I Am Once Again Asking For Your Support</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/7.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Change My Mind</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/8.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Waiting Skeleton</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/9.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Epic Handshake</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/10.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Gru's Plan</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/11.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Buff Doge vs. Cheems</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/12.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Batman Slapping Robin</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/13.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Sad Pablo Escobar</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/14.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Disaster Girl</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/15.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Woman Yelling At Cat</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/16.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Always Has Been</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/17.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Anakin Padme 4 Panel</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/18.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">X, X Everywhere</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/19.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Mocking Spongebob</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/20.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Tuxedo Winnie The Pooh</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/21.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Expanding Brain</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/22.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">I Bet He's Thinking About Other Women</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/23.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Monkey Puppet</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/24.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Trade Offer</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/25.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Boardroom Meeting Suggestion</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/26.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">One Does Not Simply</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/27.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Bike Fall</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/28.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Marked Safe From</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/29.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">They're The Same Picture</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/30.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">This Is Fine</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/31.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Clown Applying Makeup</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/32.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Ancient Aliens</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/33.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Blank Nut Button</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/34.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Hide the Pain Harold</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/35.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Megamind peeking</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/36.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Y'all Got Any More Of That</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/37.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Oprah You Get A</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/38.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">This Is Where I'd Put My Trophy If I Had One</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/39.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
+                            </div>
+                            <div class="template-item fadeIn">
+                                <div class="title">
+                                    <a href="detail.html">Is This A Pigeon</a>
+                                </div>
+                                <div class="img">
+                                    <a href="detail.html"><img src="assets/images/templates/40.jpg" class="template-img"></a>
+                                </div>
+                                <div class="button">
+                                    <a href="#" class="btn btn-caption">Add Caption</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Two Buttons</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/2.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
+                        <div class="templates-pagination fadeIn">
+                            <a href="#" class="btn btn-pagination">First</a>
+                            <a href="#" class="btn btn-pagination">‹ Prev</a>
+                            <a href="#" class="btn btn-pagination active">Next ›</a>
                         </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Distracted Boyfriend</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/3.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">UNO Draw 25 Cards</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/4.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Running Away Balloon</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/5.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Left Exit 12 Off Ramp</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/6.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Bernie I Am Once Again Asking For Your Support</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/7.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Change My Mind</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/8.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Waiting Skeleton</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/9.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Epic Handshake</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/10.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Gru's Plan</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/11.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Buff Doge vs. Cheems</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/12.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Batman Slapping Robin</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/13.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Sad Pablo Escobar</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/14.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Disaster Girl</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/15.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Woman Yelling At Cat</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/16.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Always Has Been</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/17.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Anakin Padme 4 Panel</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/18.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">X, X Everywhere</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/19.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Mocking Spongebob</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/20.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Tuxedo Winnie The Pooh</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/21.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Expanding Brain</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/22.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">I Bet He's Thinking About Other Women</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/23.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Monkey Puppet</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/24.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Trade Offer</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/25.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Boardroom Meeting Suggestion</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/26.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">One Does Not Simply</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/27.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Bike Fall</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/28.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Marked Safe From</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/29.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">They're The Same Picture</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/30.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">This Is Fine</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/31.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Clown Applying Makeup</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/32.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Ancient Aliens</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/33.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Blank Nut Button</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/34.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Hide the Pain Harold</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/35.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Megamind peeking</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/36.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Y'all Got Any More Of That</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/37.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Oprah You Get A</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/38.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">This Is Where I'd Put My Trophy If I Had One</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/39.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
-                        <div class="template-item">
-                            <div class="title">
-                                <a href="detail.html">Is This A Pigeon</a>
-                            </div>
-                            <div class="img">
-                                <a href="detail.html"><img src="assets/images/templates/40.jpg" class="template-img"></a>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="btn btn-caption">Add Caption</a>
-                            </div>
-                        </div>
+                        <br>
+                        <br>
+                        <br>
                     </div>
-                    <div class="templates-pagination">
-                        <a href="#" class="btn btn-pagination">First</a>
-                        <a href="#" class="btn btn-pagination">‹ Prev</a>
-                        <a href="#" class="btn btn-pagination active">Next ›</a>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
                 </div>
             </div>
 
         </div>
         <div class="footer-section">
-            <div class="footer-links">
-                <a href="#">Imgflip Pro</a>
-                <a href="#">GIF Maker</a>
-                <a href="#">Meme Generator</a>
-                <a href="#">Blank Meme Templates</a>
-                <a href="#">GIF Templates</a>
-                <a href="#">Chart Maker</a>
-                <a href="#">Demotivational Maker</a>
-                <a href="#">Image Resizer</a>
-                <a href="#">About</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">API</a>
-                <a href="#">Slack App</a>
-                <a href="#">Request Image Removal</a>
-            </div>
-            <div class="social-links">
-                <a href="#" class="facebook-link">Facebook</a>
-                <a href="#" class="twitter-link">Twitter</a>
-                <a href="#" class="android-link">Android App</a>
-                <a href="#" class="chrome-link">Chrome Extension</a>
-            </div>
-            <div class="footer-text">
-                Empowering creativity on teh interwebz <br> Imgflip LLC 2023 <br> <a href="#">Are you a web developer?</a>
+            <div class="container">
+                <div class="row mx-auto w-100 justify-content-between">
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                        <div class="footer-logo">
+                            <img src="assets/images/logo.png" class="logo-img">
+                        </div>
+                        <div class="footer-text fadeIn">
+                            Empowering creativity on teh interwebz <br> Imgflip LLC 2023 <br> <a href="#">Are you a web developer?</a>
+                        </div>
+                        <div class="social-links fadeIn">
+                            <a href="#" class="facebook-link">Facebook</a>
+                            <a href="#" class="twitter-link">Twitter</a>
+                            <a href="#" class="android-link">Android App</a>
+                            <a href="#" class="chrome-link">Chrome Extension</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="row mx-auto w-100 justify-content-between">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-6">
+                                <div class="footer-links ">
+                                    <a href="#" class="fadeIn">Imgflip Pro</a>
+                                    <a href="#" class="fadeIn">GIF Maker</a>
+                                    <a href="#" class="fadeIn">Meme Generator</a>
+                                    <a href="#" class="fadeIn">Blank Meme Templates</a>
+                                    <a href="#" class="fadeIn">GIF Templates</a>
+                                    <a href="#" class="fadeIn">Chart Maker</a>
+                                    <a href="#" class="fadeIn">Demotivational Maker</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-6">
+                                <div class="footer-links ">
+                                    <a href="#" class="fadeIn">Image Resizer</a>
+                                    <a href="#" class="fadeIn">About</a>
+                                    <a href="#" class="fadeIn">Privacy</a>
+                                    <a href="#" class="fadeIn">Terms</a>
+                                    <a href="#" class="fadeIn">API</a>
+                                    <a href="#" class="fadeIn">Slack App</a>
+                                    <a href="#" class="fadeIn">Request Image Removal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="feedback footer-feddback">Feedback</div>
@@ -623,6 +651,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <script>
         $(".btn-sort").click(function() {
             $("#sort-dropdown").toggleClass("d-none")

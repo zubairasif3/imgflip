@@ -18,6 +18,27 @@
                     <div>
                         <img src="assets/images/logo.png" class="logo-img">
                         <img src="assets/images/mb-logo.svg" class="mb-logo">
+                        <a href="#" class="icon-menu mb-show" id="mb-search-show">
+                            <svg width="30" height="30" id="panel-search-icon" class="s-icon" viewBox="0 0 100 100">
+                                <path d="M 20 80 l 25 -25"></path>
+                                <circle r="20" cx="59" cy="41"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <form action="#" method="post" class="mb-search-top">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search" required>
+                                <button type="submit" class="btn icon-menu">
+                                    <svg width="30" height="30" id="panel-search-icon" class="s-icon" viewBox="0 0 100 100">
+                                        <path d="M 20 80 l 25 -25"></path>
+                                        <circle r="20" cx="59" cy="41"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
                         <div class="dropdown">
                             <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Create
@@ -75,25 +96,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="icon-menu">
-                            <svg width="40" height="20" class="rand-arrows" viewBox="0 0 144 60">
-                                <path class="line" d="M 25 15 l 27 0 l 10 10 m 10 10 l 10 10 l 17 0"></path>
-                                <path class="arrow" d="M 99 45 l 0 -10 l 20 10 l -20 10 l 0 -10"></path>
-                                <path class="line" d="M 25 45 l 27 0 l 30 -30 l 17 0"></path>
-                                <path class="arrow" d="M 99 15 l 0 -10 l 20 10 l -20 10 l 0 -10"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="icon-menu">
-                            <svg width="30" height="30" id="panel-search-icon" class="s-icon" viewBox="0 0 100 100">
-                                <path d="M 20 80 l 25 -25"></path>
-                                <circle r="20" cx="59" cy="41"></circle>
-                            </svg>
-                        </a>
-                    </div>
-                    <div>
                         <div class="dropdown login-dropdown">
                             <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="mb-none">Login</span>
+                                <span class="">Login</span>
                             </button>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Login</a></li>
@@ -106,42 +111,14 @@
             </div>
         </div>
         <div class="main-content">
-            <div class="container">
-                <div class="row mx-auto justify-content-between w-100">
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-                        <div class="img"><img src="assets/images/detail.jpg" class="mw-100"></div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="detail-content-flex">
-                            <div class="top-content">
-                                <div class="title">UNO Draw 25 Cards Meme Template</div>
-                                <div class="text">also called: do something you don’t like or draw 25 cards, uno dilemma, uno or draw 25, draw 25, do something you don't like or draw 25, draw 25 meme, sprite</div>
-                                <div class="text">Do something you don’t like or draw 25 cards in UNO</div>
-                                <div class="buttons">
-                                    <a href="#" class="btn btn-detail">
-                                        <svg class="make-icon make-icon-meme on">
-                                            <g transform="scale(.3)">
-                                                <path d="M 20 0 l 30 50 l -50 -10 l 0 -40 z"></path>
-                                                <path d="M 60 0 l 40 0 l -50 50 z"></path>
-                                                <path d="M 100 60 l 0 40 l -20 0 l -30 -50 z"></path>
-                                                <path d="M 40 100 l -40 0 l 50 -50 z"></path>
-                                            </g>
-                                        </svg>
-                                        Caption this Meme
-                                    </a>
-                                    <a href="#" class="btn btn-detail">All Meme Templates</a>
-                                </div>
-                                <div class="detail">
-                                    <p>Template ID: 217743513</p>
-                                    <p>Format: jpg</p>
-                                    <p>Dimensions: 500x494 px</p>
-                                    <p>Filesize: 30 KB</p>
-                                    <p>Uploaded by an Imgflip user 4 years ago</p>
-                                </div>
-                            </div>
+            <div class="detail-page-section">
+                <div class="container">
+                    <div class="row mx-auto justify-content-between w-100">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                            <div class="img fadeIn"><img src="assets/images/detail.jpg" class="mw-100"></div>
                             <div class="bottom-content">
-                                <div class="title1">Featured UNO Draw 25 Cards Memes</div>
-                                <div class="row mx-auto w-100 mb-3">
+                                <div class="title1 fadeIn">Featured UNO Draw 25 Cards Memes</div>
+                                <div class="row mx-auto w-100 mb-3 fadeIn">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-4 ps-0">
                                         <div class="img"><img src="assets/images/detail.jpg" class="mw-100"></div>
                                     </div>
@@ -152,7 +129,37 @@
                                         <div class="img"><img src="assets/images/detail.jpg" class="mw-100"></div>
                                     </div>
                                 </div>
-                                <a href="@">see all UNO Draw 25 Cards memes</a>
+                                <a href="#" class="fadeIn">see all UNO Draw 25 Cards memes</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="detail-content-flex">
+                                <div class="top-content">
+                                    <div class="title fadeIn">UNO Draw 25 Cards Meme Template</div>
+                                    <div class="text fadeIn">also called: do something you don’t like or draw 25 cards, uno dilemma, uno or draw 25, draw 25, do something you don't like or draw 25, draw 25 meme, sprite</div>
+                                    <div class="text fadeIn">Do something you don’t like or draw 25 cards in UNO</div>
+                                    <div class="buttons fadeIn">
+                                        <a href="#" class="btn btn-detail">
+                                            <svg class="make-icon make-icon-meme on">
+                                                <g transform="scale(.3)">
+                                                    <path d="M 20 0 l 30 50 l -50 -10 l 0 -40 z"></path>
+                                                    <path d="M 60 0 l 40 0 l -50 50 z"></path>
+                                                    <path d="M 100 60 l 0 40 l -20 0 l -30 -50 z"></path>
+                                                    <path d="M 40 100 l -40 0 l 50 -50 z"></path>
+                                                </g>
+                                            </svg>
+                                            Caption this Meme
+                                        </a>
+                                        <a href="#" class="btn btn-detail">All Meme Templates</a>
+                                    </div>
+                                    <div class="detail">
+                                        <p class="fadeIn">Template ID: 217743513</p>
+                                        <p class="fadeIn">Format: jpg</p>
+                                        <p class="fadeIn">Dimensions: 500x494 px</p>
+                                        <p class="fadeIn">Filesize: 30 KB</p>
+                                        <p class="fadeIn">Uploaded by an Imgflip user 4 years ago</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,30 +167,49 @@
             </div>
         </div>
         <div class="footer-section">
-            <div class="footer-links">
-                <a href="#">Imgflip Pro</a>
-                <a href="#">GIF Maker</a>
-                <a href="#">Meme Generator</a>
-                <a href="#">Blank Meme Templates</a>
-                <a href="#">GIF Templates</a>
-                <a href="#">Chart Maker</a>
-                <a href="#">Demotivational Maker</a>
-                <a href="#">Image Resizer</a>
-                <a href="#">About</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">API</a>
-                <a href="#">Slack App</a>
-                <a href="#">Request Image Removal</a>
-            </div>
-            <div class="social-links">
-                <a href="#" class="facebook-link">Facebook</a>
-                <a href="#" class="twitter-link">Twitter</a>
-                <a href="#" class="android-link">Android App</a>
-                <a href="#" class="chrome-link">Chrome Extension</a>
-            </div>
-            <div class="footer-text">
-                Empowering creativity on teh interwebz <br> Imgflip LLC 2023 <br> <a href="#">Are you a web developer?</a>
+            <div class="container">
+                <div class="row mx-auto w-100 justify-content-between">
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                        <div class="footer-logo">
+                            <img src="assets/images/logo.png" class="logo-img">
+                        </div>
+                        <div class="footer-text fadeIn">
+                            Empowering creativity on teh interwebz <br> Imgflip LLC 2023 <br> <a href="#">Are you a web developer?</a>
+                        </div>
+                        <div class="social-links fadeIn">
+                            <a href="#" class="facebook-link">Facebook</a>
+                            <a href="#" class="twitter-link">Twitter</a>
+                            <a href="#" class="android-link">Android App</a>
+                            <a href="#" class="chrome-link">Chrome Extension</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="row mx-auto w-100 justify-content-between">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-6">
+                                <div class="footer-links ">
+                                    <a href="#" class="fadeIn">Imgflip Pro</a>
+                                    <a href="#" class="fadeIn">GIF Maker</a>
+                                    <a href="#" class="fadeIn">Meme Generator</a>
+                                    <a href="#" class="fadeIn">Blank Meme Templates</a>
+                                    <a href="#" class="fadeIn">GIF Templates</a>
+                                    <a href="#" class="fadeIn">Chart Maker</a>
+                                    <a href="#" class="fadeIn">Demotivational Maker</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-6">
+                                <div class="footer-links ">
+                                    <a href="#" class="fadeIn">Image Resizer</a>
+                                    <a href="#" class="fadeIn">About</a>
+                                    <a href="#" class="fadeIn">Privacy</a>
+                                    <a href="#" class="fadeIn">Terms</a>
+                                    <a href="#" class="fadeIn">API</a>
+                                    <a href="#" class="fadeIn">Slack App</a>
+                                    <a href="#" class="fadeIn">Request Image Removal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="feedback">Feedback</div>
@@ -192,5 +218,6 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
