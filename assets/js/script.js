@@ -12,6 +12,11 @@ $(document).ready(function() {
     $(window).scroll();
 });
 
-$("#mb-search-show").click(function() {
-    $(".header").toggleClass("search-show");
+$("#searchBar").focus(function() {
+    var formGroup = $(this).closest(".form-group");
+    $(formGroup).addClass("bg-white");
+})
+$("#searchBar").blur(function() {
+    var formGroup = $(this).closest(".form-group");
+    $(formGroup).removeClass("bg-white");
 })
