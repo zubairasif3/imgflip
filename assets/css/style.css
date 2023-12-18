@@ -238,7 +238,7 @@ fill: #fff;
     text-align: center;
     color: midnightblue;
 }
-.detail-content-flex .buttons .btn-detail,
+.detail-content-flex .button .btn-download,
 .main-content .templates-items .btn-caption{
     color: midnightblue;
     font-weight: 700;
@@ -253,7 +253,7 @@ fill: #fff;
     margin-left: 10px;
     margin-top: -7px;
 }
-.detail-content-flex .buttons .btn-detail:hover,
+.detail-content-flex .button .btn-download:hover,
 .main-content .templates-items .btn-caption:hover{
     border: 1px solid #fff;
     background: midnightblue;
@@ -424,6 +424,7 @@ fill: #fff;
     letter-spacing: 1px;
     color: midnightblue;
 }
+.detail-content-flex .button .btn-download,
 .main-content .templates-items .btn-caption{
     width: 150px;
     line-height: 1.7;
@@ -511,6 +512,9 @@ fill: #fff;
 }
 .detail-content-flex .detail p{
     margin-bottom: 8px;
+}
+.detail-content-flex .button .btn-download {
+    margin: 10px 0px;
 }
 .bottom-content {
     margin-top: 20px;
